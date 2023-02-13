@@ -1,0 +1,169 @@
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+body {
+	font-family: 'Roboto',sans-serif;
+}
+
+/*header section*/
+.header {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	width: 100%;
+	height: 60px;
+	background-color: lightblue;
+	padding: 15px;
+	position: sticky;
+	top: 0;
+}
+
+.left {
+	display: flex;
+	align-items: center;
+}
+.left #menu {
+	padding: 0 7px;
+	cursor: pointer;
+}
+.search {
+	display: flex;
+}
+.search form {
+	display: flex;
+	border: 1px solid #ddd;
+	height: 45px;
+}
+.search input {
+	width: 600px;
+	height: 100%;
+	padding: 10px;
+	border: 0;
+}
+input:focus {
+	outline: none;
+	border: 1px solid #ddd;
+}
+input {
+	border-radius: 10px 0 0 10px;
+}
+button {
+border-radius: 0 10px 10px 0;	
+}
+.search button {
+	height: 100%;
+	width: 60px;
+	border: none;
+}
+
+.mic {
+	margin-top: 12px;
+	margin-left: 3px;
+}
+
+center a .nav-link {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.nav-links {
+	color: rgb(100, 100, 100);
+	padding: 0 7px;
+	cursor: pointer;
+}
+.nav-link:hover {
+	color: #4a4a;
+}
+
+/*main section*/
+
+main {
+	height: calc(100vh );
+	display: flex;
+	background-color: #f9f9f9;
+}
+.sidebar{
+	display: flex;
+	flex-direction: column;
+	width: 30%;
+	height: 100%;
+	background-color: lightgray;
+	overflow-y: hidden;
+}
+.sidebar div .video {
+	display: flex;
+	flex-direction: row;
+}
+.sidebar .details .author{
+	visibility: hidden;
+}
+.sidebar .details {
+	flex-direction: column;
+	padding: 5px 5px;
+}
+
+.content {
+	background-color: #f9f9;
+	width: 70%;
+	height: 100%;
+	padding: 15px 15px;
+	border-top: 1px solid #ddd;
+}
+.content div .details {
+	margin-top: 10px;
+}
+.main-video iframe {
+	height: 500px;
+	width: 100%;
+}
+
+.thumbnail {
+	width: 100%;
+	height: 170px;
+}
+.thumbnail iframe {
+	border-radius: 10px;
+	margin-top: 10px;
+	margin-left: 10px;
+}
+
+.thumbnail img {
+	object-fit: cover;
+	height: 94%;
+	width: 100%;
+}
+div .author {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+.author img {
+	object-fit: cover;
+	height: 40px;
+	width: 40px;
+	margin-right: 10px;
+	border-radius: 50%;
+}
+.details {
+	display: flex;
+}
+.title {
+	display: flex;
+	flex-direction: column;
+}
+.title h3 {
+	color:  rgb(3, 3, 3);
+	line-height: 18px;
+	font-size: 14px;
+	margin-bottom: 3px;
+}
+.title p span {
+	color: rgb(96, 96, 96);
+	font-size: 12px;
+}
+.title p {
+	margin-bottom: 3px;
+}
